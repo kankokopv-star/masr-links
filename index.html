@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAS - MASR | الدفع</title>
+    <!-- استدعاء نفس خط Cairo اللي بيدي شكل واجهات احترافي -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #212529;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .main-card {
+            background: #ffffff;
+            width: 100%;
+            max-width: 420px;
+            padding: 35px 25px;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            border: 1px solid #eaeaea;
+        }
+
+        .logo-container {
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #111;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #111111;
+            margin-bottom: 6px;
+        }
+
+        p.subtitle {
+            font-size: 14px;
+            color: #6c757d;
+            margin-bottom: 28px;
+            font-weight: 600;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .btn-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 16px 20px;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            color: #ffffff;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+            transition: all 0.2s ease-in-out;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+        }
+
+        .btn-link:active {
+            transform: translateY(0);
+        }
+
+        /* لقطة لون InstaPay احترافي */
+        .btn-instapay {
+            background-color: #4a154b;
+        }
+
+        /* لقطة لون Vodafone Cash احترافي */
+        .btn-vodafone {
+            background-color: #e60000;
+        }
+
+        .footer-text {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #adb5bd;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-card">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="MAS Logo" class="logo">
+        </div>
+        
+        <h1>MAS - MASR</h1>
+        <p class="subtitle">اختر طريقة الدفع المناسبة للتحويل</p>
+
+        <div class="links-container">
+            <!-- زرار إنستاباي المباشر -->
+            <a href="instapay://transfer?mobile=01229603606" class="btn-link btn-instapay">
+                💳 الدفع عبر InstaPay
+            </a>
+
+            <!-- زرار فودافون كاش المباشر -->
+            <a href="tel:*9*7*01229603606#" class="btn-link btn-vodafone">
+                🔴 التحويل عبر فودافون كاش
+            </a>
+        </div>
+
+        <div class="footer-text">
+            جميع الحقوق محفوظة © MAS - MASR
+        </div>
+    </div>
+
+</body>
+</html>
